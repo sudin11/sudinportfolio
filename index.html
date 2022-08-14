@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&family=Roboto:wght@100&family=Ruda&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head style="border:1px solid black;">
+<body>
+    <!-- <div class="content"> -->
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo" > <a href="#">Sud<span>in.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about">About me</a></li>
+            </ul> 
+            <div class="menu-btn" onclick="toggle()">
+                    <i class="fa fa-bars"></i>   
+            </div>
+        </div>
+    </nav>
+
+  <!-- main content -->
+  <!-- first section -->
+  <section class="home" id="home" >
+      <div class="max-width">
+          <div class="home-content">
+            <div class="image">
+                <img src="img/profile.jpg" alt="profile picture">
+            </div>
+            <div class="text">
+                <h3><span>Hi!</span> &nbsp; I'am</h3>
+                <h1 id="name">Sudin Adhikari</h1>
+                <p>Web Developer, Software Engineer</p>
+                <a href="img/Sudin Adhikari.pdf" download="resume">
+                    <button id="resume-btn">Resume</button>
+                  </a>
+                <a href="#Contact"><button id="cnt-btn">Contact Me</button></a>
+            </div>
+          </div>
+      </div>
+  </section>
+<!-- About Me and Academic Honesty -->
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-info">
+            <div class="col left">
+                <h3>Academic Honesty</h3> <br>
+                <p> 
+                    Hi, I am Sudin Adhikari. I am currently enrolled in CPA.I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+                </p>
+                <p><b>Date: 8/14/2022</b></p>
+            </div>
+            <div class="col right">
+                <h3>Basic information</h3><br>
+                    <P>
+                    <b>Age:</b> 20 <br>
+                    <b>Email:</b> sadhikari26@myseneca.ca <br>
+                    <b>Language:</b> English, Nepali, Hindi, Chinese <br>
+                    <b> Course:</b> WEB222 <br>
+                    <b>Section:</b> ZBB <br>
+                    <b>Professor Name:</b> Noman Atique
+                    </P>
+
+            </div>
+        </div>          
+    </div>
+    
+</section>
+ <!-- Education -->
+<section class="education" id="education">
+    <div class="max-width">
+        <h1 class="title"> Education</h1>
+        <div class="edu-content">
+            <div class="degree-card">
+                <div class="edu-deg">
+                    <p>2022-2023 (expected)</p>
+                    <h4>Diploma</h4>
+                </div>  
+                <div class="edu-exp">
+                    <h4>Diploma in Computer Programming (CPP)</h4>
+                    <p>Seneca College of Art and Technology</p>
+                </div>          
+            </div>
+
+            <div class="degree-card">
+           
+                <div class="edu-deg">
+                    <p>2017-2019</p>
+                    <h4>+2 level</h4>
+                </div>  
+                <div class="edu-exp">
+                    <h4>+2 level</h4>
+                    <p>Kathmandu Institute Of Science and Technology</p>
+                </div>           
+            </div>
+
+            <div class="degree-card">
+           
+                <div class="edu-deg">
+                    <p>20014-2016</p>
+                    <h4>SEE</h4>
+                </div>  
+                <div class="edu-exp">
+                    <h4>Secondary Education Examination (SEE)</h4>
+                    <p>Motherland Higher Secondary School</p>
+                </div>           
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section class = "contact" id="Contact">
+    <div class="max-width">
+        <h1 class="title">Contact Form</h1>
+            <div class="contact-content">
+                <div class="col right">
+                    <form action="https://httpbin.org/post" method="post" class="form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="fname" placeholder= "Name" name="fname" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email" placeholder="abc@gmail.com" required><br>
+                        <label for="city">City:</label><br>
+                        <input type="text" id="city" name="city"required placeholder = "City" list="citylist">
+                        <datalist id="citylist" >
+                            <option value="Toronto"> Toronto</option>
+                            <option value="Quebec"> Quebec</option>
+                            <option value="Vancouver"> Vancouver</option>
+                            <option value="Victoria"> Victoria</option>
+                            <option value="Calgary"> Calgary</option>
+                            <option value="Ottawa"> Ottawa</option>
+                            <option value="Montreal"> Montreal</option>
+                        </datalist> 
+                        <label for="postalcode">Postal Code:</label>  
+                        <input type="text" id="postalCode" name="postalCode" inputmode="numeric" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="A0A 0A0"> <br>
+                        <div id="radioBtn">
+                        <input type="radio" id="qstn" name="radio-btn" onclick="hideInput()"> Question
+                        <input type="radio" id="cmnt" name="radio-btn" onclick="hideInput()"> Comment
+                        <input type="radio" id="hiring" name="radio-btn" onclick="showInput()"> Hiring
+                        </div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder=" Message" rows="5" cols="50"></textarea>
+                        <br>
+                        <label for="phone">Phone:</label>
+                        <input type="number" name="phone" id="phone">
+                        <div class="btnContainer">
+                        <input type="submit" value="Submit" class="button" onclick="payRateValidation()">
+                        <input type="reset" value="Clear" class="button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</section>
+<footer>
+    <span>Created By Sudin Adhikari | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+</footer>
+    <script src="main.js"></script> 
+</body>
+</html>

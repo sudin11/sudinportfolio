@@ -1,0 +1,477 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&family=Roboto:wght@100&family=Ruda&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+   body{
+    font-family: 'Poppins', sans-serif;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  } 
+  section{
+    padding: 100px 0;
+  }
+
+  .max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+
+  .about, .edu , .contact, footer {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .about .about-info, .contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  /*navbar styling */
+  .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: rgb(217, 49, 49);
+  }
+
+  .navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .logo a{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .navbar .logo a span{
+    color: rgba(207, 253, 4, 0.599);
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu li{
+    list-style: none;
+    display: inline-block;
+  }
+
+  .navbar .menu li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navbar .menu li a:hover{
+    color: rgba(4, 253, 95, 0.599);
+  }
+ 
+
+  /* menu btn styling */
+  .menu-btn{
+    color:rgb(0, 0, 0);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #resume-btn{
+    margin-left: 55px;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  #cnt-btn {
+    margin: 10px ;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    align-items: center;
+    margin: 5px;
+  }
+
+   #resume-btn:hover, #cnt-btn:hover{
+    color: #45a049;
+    background-color: white;
+  }
+
+
+  .home {
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    background-color: rgb(245, 237, 18);
+  }
+  .home .max-width{
+    width: 100%;
+    display: flex;
+  }
+  .home .home-content{
+    display: flex;
+    text-align: center;
+    margin-left: 200px;
+  }
+  .home .home-content .image{
+    margin: 0 30px 0 0;
+  }
+  .home .home-content .image img{
+    float: left;
+    margin: auto 0 auto 40px;
+    border-radius: 50%;
+    width: 400px;
+    height: 410px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .home .home-content .text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 100px 50px;
+    padding-top: 20px; 
+    color: rgb(255, 255, 255);
+    
+  }
+ h3 span{
+   color: #45a049;
+ }
+ .text p{
+   margin: 10px 20px;
+ }
+
+ /* about section */
+ .about{
+   background-color: #2e7a27;
+ }
+ 
+  .about .about-info .left{
+    width: 48%;
+    padding: 5px;
+    margin: 2px;
+  }
+
+  .about .about-info .right{
+    width: 48%;
+    padding: 5px;
+  }
+
+  /* education */
+  .education h1{
+     text-align: center;
+     text-decoration: underline;
+   }
+   .degree-card{
+     margin: 50px;
+     height: 100%;
+     display: flex;
+     
+     box-shadow: 2px 8px rgb(243, 237, 237);
+   }
+   .edu-deg{
+      color: white;
+      text-align: center;
+      background-color: rgb(82, 73, 111);
+      width:20%;
+      padding: 10px;
+   }
+   .edu-exp{
+     width: 75%;
+     padding: 10px;
+   }
+   .degree-card:hover{
+    box-shadow: 2px 8px rgb(193, 190, 190);
+   } 
+
+   /* contact styling */
+   .col{
+     flex: 1;
+
+   }
+   .contact{
+     background-color: #d8d8d8;
+   }
+   .contact .contact-content .col{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form {
+   
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+ 
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    left: 0;
+    right: 0;
+  }
+  input[type=text], select, textarea,input[type=email], input[type=number]  {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid rgb(246, 244, 244);
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 5px;
+    resize: vertical;
+  }
+  input[type=radio]{
+    margin-left: 5px;
+  }
+
+  input[type=submit],input[type=reset] {
+    background-color: #8049a1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  input[type=submit]:hover, input[type=reset]:hover{
+    background-color: #ffffff;
+    color: rgb(98, 81, 132);
+  }
+
+  .btnContainer{
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .form h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+   
+  /* for responsive */
+
+@media  (max-width: 1104px) {
+    .about .about-info .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media  (max-width:991px){
+  .max-width{
+    padding: 0 50px;
+    max-width: 930px;
+  }}
+  @media (max-width: 947px) {
+  .menu-btn{
+    display: block;
+    z-index: 1;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: rgb(33, 188, 227);
+    text-align: center;
+    padding-top: 80px;
+  }
+  .navbar .menu.active{
+    left: 0;
+  }
+  .navbar .menu li{
+    display: block;
+  }
+
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  
+
+ .home .home-content h1{
+    font-size: 70px;
+}
+.home .home-content h3{
+    font-size: 35px;
+}
+.home .home-content a{
+    font-size: 23px;
+    padding: 10px 30px;
+}
+.max-width{
+    max-width: 930px;
+}
+.about .about-info .col{
+    width: 100%;
+}
+.about .about-info .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+.about .about-content .right{
+    flex: 100%;
+}
+.edu .edu-content .degree-card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+.contact .contact-content .column{
+    width: 100%;
+    margin-bottom: 35px;
+}
+}
+
+
+@media (max-width: 850px) {
+  .menu-btn{
+    display: block;
+    z-index: 1;
+  }
+
+  .menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 300px;
+      height: 100vh;
+      background: #0F0119;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      z-index: 1;
+  }
+
+  .open-menu {
+      right: 0;
+      transition: 0.5s;
+  }
+
+  .menu a {
+      display: block;
+      margin: 1rem 0;
+  }
+
+  .home .text h3 {
+      font-size: 1.3rem;
+  }
+
+  .home .text h1 {
+      font-size: 4rem;
+      line-height: 6rem;
+  }
+
+  .home .text  p {
+      font-size: 0.75rem;
+  }
+
+  .about-info col {
+      width: 100%;
+  }
+
+ 
+}
+
+/* Even Smaller Size */
+@media (max-width: 550px) {
+
+  .menu-btn{
+    display: block;
+    z-index: 1;
+  }
+
+  .home .home-content .image {
+    width: 100%;
+  }
+
+  .home .home-content .text{
+    width: 100%;
+  }
+  .home .text h3 {
+      font-size: 1.2rem;
+  }
+
+  .home .text h1 {
+      font-size: 2.3rem;
+      line-height: 3.2rem;
+  }
+
+  .home .text p {
+      font-size: 0.5rem;
+  }
+
+  .about-info {
+      grid-template-columns: 1fr;
+  }
+
+  .heading {
+      font-size: 3.2rem;
+  }
+
+  .about-info p {
+      font-size: 0.5rem;
+  }
+
+}
+
+  
